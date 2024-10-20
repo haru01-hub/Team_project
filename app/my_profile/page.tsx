@@ -1,6 +1,5 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import { auth, currentUser } from '@clerk/nextjs/server'
-import { Session } from 'inspector/promises'
+
 import Link from 'next/link'
 
 export default async function DashboardPage() {

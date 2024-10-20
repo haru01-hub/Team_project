@@ -1,9 +1,6 @@
-import { auth, currentUser } from '@clerk/nextjs/server'
 import Link from 'next/link'
 
 export default async function BookRank() {
-  const { userId } = auth()
-  const user = await currentUser()
   return (
     <div>
       <div

@@ -1,8 +1,4 @@
-import { auth, currentUser } from '@clerk/nextjs/server'
-
 export default async function BookRank() {
-  const { userId } = auth()
-  const user = await currentUser()
   return (
     <div>
       <h3 className="text-2xl text-left font-bold mb-2">Reader Ranking</h3>

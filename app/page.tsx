@@ -1,10 +1,6 @@
-import Image from 'next/image'
-import { auth, currentUser } from '@clerk/nextjs/server'
-import Link from 'next/link'
-import { SignUpButton } from '@clerk/nextjs'
+import { currentUser } from '@clerk/nextjs/server'
 
 export default async function Home() {
-  const { userId } = auth()
   const user = await currentUser()
   return (
     <div className="flex">
