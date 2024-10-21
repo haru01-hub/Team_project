@@ -35,7 +35,7 @@ export default function RootLayout({
         >
           <Header />
           <main className="container">
-            <div className="flex ml-60 mt-10 min-h-screen mb-4">
+            <div className="flex ml-60 md:ml-60 mt-10  min-h-screen mb-4  ">
               <div>{children}</div>
             </div>
           </main>
